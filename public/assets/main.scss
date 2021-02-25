@@ -1,0 +1,156 @@
+// FONTS
+
+@import url("https://use.typekit.net/eal8zhj.css");
+
+// COLORS
+
+$bg: #E7E7E7;
+
+$b: #383846;
+
+$blue: #0F40CE;
+$cyan: #48EEEB;
+
+// CODE
+
+* {
+  box-sizing: border-box;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #E7E7E7;
+  font-family: 'Lausanne';
+  color: $b;
+}
+
+@font-face {
+  font-family: 'Lausanne';
+  src: url('Lausanne-300Italic.woff2') format('woff2'),
+    url('Lausanne-300Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lausanne';
+  src: url('Lausanne-300.woff2') format('woff2'),
+    url('Lausanne-300.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+#container {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+
+  position: fixed;
+  bottom: 0;
+  padding: 1em;
+  width: 100%;
+  left: 0;
+
+  background: #121212;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    font-family: "Lausanne";
+    font-weight: 100;
+    font-size: .8em;
+    letter-spacing: .5px;
+    margin: 0 2vw;
+    color: $bg;
+    text-transform: uppercase;
+    mix-blend-mode: difference;
+  }
+
+  a:hover {
+    opacity: 0.6;
+  }
+}
+
+#logo {
+
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 1.5vh;
+  padding: 1em;
+  margin: 0 auto;
+  text-align: center;
+
+  img {
+    max-width: 60px;
+  }
+
+}
+
+#welcome {
+
+  background: #121212;
+
+  height: 70vh;
+  min-height: 500px;
+
+  padding: 40px 0 0 0;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .intro {
+    letter-spacing: -2px;
+    margin: 0 auto;
+    max-width: 280px;
+    font-size: 3.6em;
+    line-height: 90%;
+    font-family: kepler-std-condensed-display, serif;
+    font-weight: 300;
+    font-style: normal;
+    color: $bg;
+
+    em {
+      color: $blue;
+    }
+
+  }
+
+}
+
+#about {
+
+  padding: 2.5vh 0 5vh 0;
+
+  h1 {
+    text-align: center;
+    font-size: 2.6em;
+    font-family: kepler-std-condensed-display, serif;
+    font-weight: 300;
+    font-style: normal;
+    display: none;
+  }
+
+  p {
+    font-size: .9em;
+    max-width: 90vw;
+    padding: 1em;
+    margin: 0 auto;
+    color: $b;
+    line-height: 140%;
+  }
+
+
+}
